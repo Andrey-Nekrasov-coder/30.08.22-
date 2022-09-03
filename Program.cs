@@ -1,12 +1,10 @@
-﻿Console.WriteLine("Введите первое число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число: ");
-int b = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число: ");
-int c = Convert.ToInt32(Console.ReadLine());
-if ((a > b ) && (b > c))
-Console.WriteLine((a,b,c) + "->"+ a);
-if ((b > a ) && (a > c))
-Console.WriteLine((a,b,c) + "->"+ b);
-if ((c > b ) && (b > a))
-Console.WriteLine((a,b,c) + "->"+ c);
+﻿Console.WriteLine("Введите число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+for (int i = 0; i <= n; i+=2)
+{
+if (i == n || i == n - 1)
+Console.Write(i);
+else
+Console.Write(i + ", ");
+}
+
